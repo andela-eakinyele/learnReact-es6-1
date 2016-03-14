@@ -7,9 +7,14 @@ class Attendance extends React.Component {
     this.addMemberRow = this.addMemberRow.bind(this);
   }
 
-addMemberRow(){
-
-}
+  addMemberRow(member, index) {
+    return (
+      <tr key={index}>
+        <td>{member.name}</td>
+        <td>{member.id}</td>
+      </tr>
+      );
+  }
 
   render() {
     return (
@@ -20,6 +25,7 @@ addMemberRow(){
             <tr>
               <th>Audience Member</th>
               <th>SocketID</th>
+            </tr>
           </thead>
           <tbody>
             {this.props.audience.map(this.addMemberRow)}

@@ -17,7 +17,10 @@ var config = {
       test: /\.(js|jsx)$/,
       include: APP_DIR,
       exclude: '/node_modules/',
-      loader: 'babel'
+      loader: 'babel',
+      query: {
+        compact: false
+      }
     }]
   }
 };

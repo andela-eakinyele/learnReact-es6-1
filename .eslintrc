@@ -20,11 +20,9 @@
     ]
   },
   "env": {
-    "es6": true,
     "browser": true
   },
   "extends": "eslint:recommended",
- 
   "plugins": [
     "react"
   ],
@@ -32,6 +30,7 @@
         "ecmaVersion": 6,
         "sourceType": "module",
         "ecmaFeatures": {
+          "es6": true,
           "jsx": true,
           "modules": true,
           "experimentalObjectRestSpread": true
@@ -41,6 +40,7 @@
     "__dirname" : true,
     "process": true,
     "module": true,
-    "require": true
+    "require": true,
+    "console": true
     }
 }

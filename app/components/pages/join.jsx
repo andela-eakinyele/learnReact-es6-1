@@ -25,6 +25,7 @@ class Join extends React.Component {
         <button className="btn btn-primary">Join</button>
         <Display if={this.props.title === 'Untitled Presentation'}>
           <Link to="/speaker">Start the Presentation</Link>
+          <Link to="/board">Go to the board</Link>
         </Display>
       </form>
       );
